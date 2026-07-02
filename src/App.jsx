@@ -577,7 +577,7 @@ function Header() {
   <a href="#education" onClick={closeMenu}>Education</a>
   <a href="#certificates" onClick={closeMenu}>Certificates</a>
   <a href="#contact" onClick={closeMenu}>Contact</a>
-    <a href="/resume.pdf" target="_blank" rel="noreferrer" onClick={closeMenu}>
+    <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" onClick={closeMenu}>
   Resume
 </a>
   <a className="nav-cta" href={LINKS.gmail} target="_blank" rel="noreferrer" onClick={closeMenu}>
@@ -628,7 +628,7 @@ function App() {
           </a>
 <a
   className="button button-secondary"
-  href="/resume.pdf"
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
   target="_blank"
   rel="noreferrer"
 >
@@ -712,7 +712,7 @@ function App() {
               <a className="link-pill link-pill-inverse" href="#projects">
                 View projects <ArrowIcon />
               </a>
-              <a className="about-secondary-link" href="/resume.pdf" target="_blank" rel="noreferrer">
+              <a className="about-secondary-link" href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer">
                 Download resume <FaFileDownload />
               </a>
             </div>
